@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <style>
+        .crs{
+            border-radius: 10px;
+            /* border: 1px solid peachpuff; */
+            /* position: relative; */
+            background-color:beige;            
+        }
+        .pd{
+            padding: 2%;
+        }
+    </style>
+</head>
+<body>
+    <!-- western calligraphy cards-->
+     <section>
+    <div class="container mt-5">
+        <div class="row" id="crd1"></div>
+    </div>
+       <script>
+        let obj1 = [
+            {name:"p1",des:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborios",image:"images/w1.webp"},
+            {name:"p2",des:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborios",image:"images/w2.jpeg"},
+            {name:"p3",des:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborios",image:"images/w3.jpg"},
+            {name:"p4",des:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborios",image:"images/w4.webp"},
+            {name:"p5",des:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborios",image:"images/w5.avif"},
+            {name:"p6",des:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborios",image:"images/w6.jpeg"}
+
+        ]
+          let cards1 = document.querySelector("#crd1");
+          for(let i=0; i<obj1.length; i++){
+                    cards1.innerHTML += ` <div class="col-md-4 col-sm-6 pd">
+                        <div class="card shadow-lg crs" style="width: 20rem;">
+        <img src="`+obj1[i].image+`" class="card-img-top" style="height:250px" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">`+obj1[i].name+`</h5>
+          <p class="card-text">`+obj1[i].des+`</p>
+          <a class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      </div>`
+                }
+                $("#crd1").html(cards1);       
+      </script>
+      </section>
+       
+      <!-- eastern calligraphy cards -->
+      <section>
+        <div class="container mt-5">
+            <div class="row" id="crd2"></div>
+        </div>
+           <script>
+            let obj2 = [
+                {name:"p1",des:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborios",image:"images/w1.webp"},
+                {name:"p2",des:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborios",image:"images/w2.jpeg"},
+                {name:"p3",des:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborios",image:"images/w3.jpg"},
+                {name:"p4",des:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborios",image:"images/w4.webp"},
+                {name:"p5",des:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborios",image:"images/w5.avif"},
+                {name:"p6",des:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborios",image:"images/w6.jpeg"}
+    
+            ]
+              let cards2 = document.querySelector("#crd2");
+              for(let i=0; i<obj2.length; i++){
+                        cards2.innerHTML += ` <div class="col-md-4 col-sm-6 pd">
+                            <div class="card shadow-lg crs" style="width: 20rem;">
+            <img src="`+obj2[i].image+`" class="card-img-top" style="height:250px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">`+obj2[i].name+`</h5>
+              <p class="card-text">`+obj2[i].des+`</p>
+              <a class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          </div>`
+                    }
+                    $("#crd2").html(cards2);       
+          </script>
+      </section>
+</body>
+</html>
