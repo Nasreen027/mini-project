@@ -22,6 +22,13 @@
         .pd{
             padding: 2%;
         }
+        /* .zoom:hover{
+            -ms-transform: scale(1.2); 
+            -webkit-transform: scale(1.2);
+             transform: scale(1.2); 
+             overflow: hidden;
+             height: 200px;
+        } */
     </style>
 </head>
 <body>
@@ -44,7 +51,9 @@
           for(let i=0; i<obj1.length; i++){
                     cards1.innerHTML += ` <div class="col-md-4 col-sm-6 pd">
                         <div class="card shadow-lg crs" style="width: 20rem;">
-        <img src="`+obj1[i].image+`" class="card-img-top" style="height:250px" alt="...">
+                            <div class="bg-image hover-zoom">
+        <img src="`+obj1[i].image+`" class="card-img-top w-100" style="height:250px" alt="...">
+        </div>
         <div class="card-body">
           <h5 class="card-title">`+obj1[i].name+`</h5>
           <p class="card-text">`+obj1[i].des+`</p>
