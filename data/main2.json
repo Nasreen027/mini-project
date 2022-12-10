@@ -1,8 +1,8 @@
 [
-    {"name":"Zen Symbol Japanese Chinese Kanji Character Caligraphy Design Canvas Print","des":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborios","image":"images/eastasian/e1.jpg"},
-    {"name":"Chinese Five Blessings Calligraphy V2 (Red on Black) Canvas Print","des":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborios","image":"images/eastasian/e3.jpg"},
-    {"name":"Bushido Code, Samurai Code Brush Calligraphy 7 Virtues Japan Canvas Print","des":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborios","image":"images/eastasian/e4.jpg"},
-    {"name":"Your King Is Here 王者归来 Canvas Print Golden Highlighted on Black","des":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborios","image":"images/eastasian/e5.jpg"},
-    {"name":"Hojo Clan Family Crest Kamon - White Title Version Canvas Print","des":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborios","image":"images/eastasian/e6.jpg"},
-    {"name":"Chinese Five Blessings Calligraphy V2 (White on Black) Canvas Print","des":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborios","image":"images/eastasian/e2.jpg"}
+    {"name":"Zen Symbol Chinese Kanji Character","price":"Rs.2000","image":"images/e1.jpg"},
+    {"name":"Chinese Five Blessings-Red on Black","price":"Rs.2000","image":"images/e3.jpg"},
+    {"name":"Bushido Code, Samurai Code","price":"Rs.2000","image":"images/e4.jpg"},
+    {"name":"Your King Is Here 王者归来","price":"Rs.2000","image":"images/e5.jpg"},
+    {"name":"Hojo Clan Family Crest Kamon","price":"Rs.2000","image":"images/e6.jpg"},
+    {"name":"Chinese Five Blessings-White on Black","price":"Rs.2000","image":"images/e2.jpg"}
 ]

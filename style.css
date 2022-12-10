@@ -1,63 +1,10 @@
-/* categories css start */
-/* html{
-    scroll-behavior: smooth;
-} */
-.head{
-    background-color: antiquewhite;
-    padding: 10px;
-    font-size: 35px;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 100px;
-}
-#a{
-    /* height: 12rem; */
-    /* background-color: blue; */
-    height: 35rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color:white;
-   
-}
-.west{
-    /* background-color: rgb(47, 47, 110); */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('images/west/west.jpg');
-    font-size: 50px;
-}
-.east{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('images/eastasian/east.jpeg');
-    font-size: 50px;
-}
-.arab{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('images/arab/arab.jpg');
-    font-size: 50px;
-}
-.cont{
-    position: relative;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-/* .cont2{
-    position: relative;
-    left: 90%;
-} */
- /* categories css end */
  /* cards css start */
- /* .cont{
-    padding: 16%;
-    position: relative;
-    top: 30%;
-    background-color: rgb(77, 86, 94);
-    height: 20%;
- } */
 * {
     margin: 0 auto;
   }
-  .crs {
-    border-radius: 10px;
-    /* border: 1px solid peachpuff; */
-    /* position: relative; */
-    background-color: beige;
+  .display{
+     display: flex;
+     justify-content: space-evenly;
   }
   .pd {
     padding: 2%;
@@ -67,5 +14,40 @@
         -webkit-transform: scale(1.2); */
          transform: scale(1.1);
          transition: transform 0.25s;
+         overflow: hidden;
     }
-    /* cards css end */
+    .color{
+        color: red;
+    }
+    /* card css end */
+    .bt{
+      margin: 10px;
+      padding: 30px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;
+     /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+      box-shadow: 0 0 20px #eee;
+      border-radius: 10px;
+      background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+    }
+    .btn:hover {
+      background-position: right center; /* change the direction of the change here */
+    }
+    .top{
+      display: flex;
+    }
+    .left{
+      width: 50%;
+      text-align-last:end;
+    }
+    .right{
+      width: 50%;
+      text-align-last: left ;
+    }
+    /* display block/none css start */
+    /* #west,#east,#arab{
+      display: none;
+    } */
