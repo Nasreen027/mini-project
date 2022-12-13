@@ -1,5 +1,5 @@
 [
-    {"name": "Asma ul Husna 02","price": "Rs.3400","image": "images/asma.webp"},
-    {"name": "Loh-e-Qurani-02","price": "Rs.2100","image": "images/ham.webp"},
-    {"name": "La-Hola-Walaquwata-Illabillah 04","price": "Rs.2800","image": "images/lahawla.webp"}
+    {"name": "Asma ul Husna 02","image": "images/asma.webp"},
+    {"name": "Loh-e-Qurani-02","image": "images/ham.webp"},
+    {"name": "La-Hola-Walaquwata-Illabillah 04","image": "images/lahawla.webp"}
 ]

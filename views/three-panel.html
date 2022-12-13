@@ -1,0 +1,28 @@
+    <div class="container mt-5">
+      <div class="top">
+        <h2 class="right">3 Panels Canvas Set</h2>
+        <div id="btn-go-back-three" class="left"><button class="btn bt">Show Less</button>
+        </div>
+      </div>
+      <div class="row" id="three"></div>
+    </div>
+    <script>
+      $.getJSON("./data/threecard.json", (threecard)=>{
+        let threeview = document.querySelector("#three");
+      for (let i = 0; i<threecard.length; i++) {
+        threeview.innerHTML +=
+          ` <div class="col-md-4 col-sm-6 pd display">
+                      <div class="shadow-lg" style="width: 25rem;overflow:hidden">
+                <div class="zoom">
+         <a href=""><img src="`+ threecard[i].image +
+          `" class="card-img-top w-100" style="height:20rem" alt="..."></a>
+      </div>
+      <div class="card-body container-fluid">
+        <h5>` +threecard[i].name +
+          `</h5>
+      </div>
+    </div>
+    </div>`
+      }
+      })
+      </script>

@@ -1,8 +1,8 @@
 [
-    {"name": "Set of 3 Quotations-Black & White","price": "Rs.1200","image": "images/w1.webp"},
-    {"name": "Quote-Black on Painted Background","price": "Rs.2000","image": "images/w2.jpeg"},
-    {"name": "Quote-Black on Colourful Background","price": "Rs.1800","image": "images/w3.jpg"},
-    {"name": "Quotations-Set of 8-Black on White","price": "Rs.2200","image": "images/w4.webp"},
-    {"name": "Costumised Names-Black on White","price": "Rs.3400","image": "images/w5.avif"},
-    {"name": "Quote-Black on Starry Background","price": "Rs.2200","image": "images/w6.jpeg"}
+    {"name": "Set of 3 Quotations-Black & White","image": "images/w1.webp"},
+    {"name": "Quote-Black on Painted Background","image": "images/w2.jpeg"},
+    {"name": "Quote-Black on Colourful Background","image": "images/w3.jpg"},
+    {"name": "Quotations-Set of 8-Black on White","image": "images/w4.webp"},
+    {"name": "Costumised Names-Black on White","image": "images/w5.avif"},
+    {"name": "Quote-Black on Starry Background","image": "images/w6.jpeg"}
 ]

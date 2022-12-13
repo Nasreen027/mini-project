@@ -1,8 +1,8 @@
 [
-    {"name":"Zen Symbol Chinese Kanji Character","price":"Rs.2000","image":"images/e1.jpg"},
-    {"name":"Chinese Five Blessings-Red on Black","price":"Rs.2000","image":"images/e3.jpg"},
-    {"name":"Bushido Code, Samurai Code","price":"Rs.2000","image":"images/e4.jpg"},
-    {"name":"Your King Is Here 王者归来","price":"Rs.2000","image":"images/e5.jpg"},
-    {"name":"Hojo Clan Family Crest Kamon","price":"Rs.2000","image":"images/e6.jpg"},
-    {"name":"Chinese Five Blessings-White on Black","price":"Rs.2000","image":"images/e2.jpg"}
+    {"name":"Zen Symbol Chinese Kanji Character","image":"images/e1.jpg"},
+    {"name":"Chinese Five Blessings-Red on Black","image":"images/e3.jpg"},
+    {"name":"Bushido Code, Samurai Code","image":"images/e4.jpg"},
+    {"name":"Your King Is Here 王者归来","image":"images/e5.jpg"},
+    {"name":"Hojo Clan Family Crest Kamon","image":"images/e6.jpg"},
+    {"name":"Chinese Five Blessings-White on Black","image":"images/e2.jpg"}
 ]
