@@ -64,6 +64,57 @@
       width: 50%;
       text-align-last: left ;
     }
-    /* #arrcard{
-      display: none;
-    } */
+    /* arabicfonts css start */
+    .afonts{
+      background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+    }
+    .font1arab{
+      background-color: #d1d9e5;
+      height: 7rem;
+      margin: 2%;
+      padding: 2%;
+      border-radius: 20px;
+    }
+    .a1{
+      font-family:IBM Plex Sans Arabic;
+    }
+    .a2{
+      font-family:Noto Naskh Arabic;
+    }
+    .a3{
+      font-family: Noto Sans Arabic;
+    }
+    .a4{
+      font-family:Noto Kufi Arabic;
+    }
+    /* arabicfonts css end */
+
+    /* west font css start */
+    .w1{
+      font-family: Noto Serif Display;
+    }
+    .w2{
+      font-family: Audiowide;
+    }
+    .w3{
+      font-family: Sofia;
+    }
+    .w4{
+      font-family: Noto Sans Symbols;
+    }
+    /* west font css end */
+
+    /* east font css start */
+    .e1{
+      font-family: Noto Sans Simplified Chinese;
+    }
+    .e2{
+      font-family: Noto Sans Traditional Chinese;
+    }
+    .e3{
+      font-family: Noto Serif Traditional Chinese;
+    }
+    .e4{
+      font-family: Noto Serif Simplified Chinese;
+    }
+    /* east font css end */

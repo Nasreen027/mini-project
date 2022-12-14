@@ -1,0 +1,32 @@
+<div class="container mt-5">
+    <div class="top">
+      <h2 class="right">4 Panels Canvas Set</h2>
+      <div class="left">
+      <button id="btn-go-back-four" class="btn bt">Show Less</button>
+    </div>
+    </div>
+    <div class="row" id="four"></div>
+  </div>
+  <script>
+    $.getJSON("./data/fourcard.json", (fcard) => {
+      let fourcrd = document.querySelector("#four");
+      for (let i = 0; i < fcard.length; i++){
+        fourcrd.innerHTML +=
+          ` <div class="col-md-4 col-sm-6 pd display">
+                        <div class="shadow-lg" style="width: 25rem;overflow:hidden">
+                  <div class="zoom">
+           <a href=""><img src="` +
+          fcard[i].image +
+          `" class="card-img-top w-100" style="height:20rem" alt="..."></a>
+        </div>
+        <div class="card-body container-fluid">
+          <h5>` +
+          fcard[i].name +
+          `</h5>
+        </div>
+      </div>
+      </div>`;
+      }
+    });
+  </script>
+  

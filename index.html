@@ -12,8 +12,9 @@
     <script src="bootstrap4/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <!-- new arrivals start -->
- 
+    <!-- arabic calligraphy -->
+    <div id="arabic-calligraphy">
+      <!-- new arrivals start -->
     <section id="arrival">
       <div class="container mt-5">
         <div class="top">
@@ -83,15 +84,16 @@
     <!-- 3-panel canvas end -->
 
     <!-- 4-panel canvas start -->
-    <!-- <section id="fourpanel">
+    <section id="fourpanel">
       <div class="container mt-5">
         <div class="top"><h2 class="right">4 Panels Canvas Set</h2>
-          <a href="" class="left"><button class="btn bt">See All</button></a></div>
-        <div class="row" id="four"></div>
+          <div class="left"><button id="btfour" class="btn bt">See All</button>
+          </div></div>
+        <div class="row" id="foursets"></div>
       </div>
       <script>
         $.getJSON("./data/fourpanel.json", (arrayfour)=>{
-          let four = document.querySelector("#four");
+          let four = document.querySelector("#foursets");
         for (let i = 0; i<arrayfour.length; i++) {
           four.innerHTML +=
             ` <div class="col-md-4 col-sm-6 pd display">
@@ -109,19 +111,20 @@
         }
         })
         </script>
-    </section> -->
+    </section>
     <!-- 4-panel canvas end -->
 
     <!-- 5-panel-canvas start -->
     <section id="fivepanel">
       <div class="container mt-5">
         <div class="top"><h2 class="right">5 Panels Canvas Set</h2>
-          <a href="" class="left"><button class="btn bt">See All</button></a></div>
-        <div class="row" id="five"></div>
+          <div class="left"><button id="btfive" class="btn bt">See All</button>
+          </div></div>
+        <div class="row" id="fivesets"></div>
       </div>
       <script>
         $.getJSON("./data/fivepanel.json", (arrayfive)=>{
-          let five = document.querySelector("#five");
+          let five = document.querySelector("#fivesets");
         for (let i = 0; i<arrayfive.length; i++) {
           five.innerHTML +=
             ` <div class="col-md-4 col-sm-6 pd display">
@@ -146,7 +149,8 @@
     <section id="wooden">
       <div class="container mt-5">
         <div class="top"><h2 class="right">Wooden Frames</h2>
-          <a href="" class="left"><button class="btn bt">See All</button></a></div>
+          <div class="left"><button id="btwood" class="btn bt">See All</button>
+          </div></div>
         <div class="row" id="wood"></div>
       </div>
       <script>
@@ -171,6 +175,39 @@
         </script>
     </section>
     <!-- wooden frames end -->
+  </div>
+  <!-- arabic calligraphy end -->
+
+  <!-- western calligraphy start -->
+  <section id="western">
+    <div class="container mt-5">
+      <div class="top"><h2 class="right">Western Calligraphy Canvas</h2>
+        <div class="left"><button id="btwest" class="btn bt">See All</button>
+        </div></div>
+      <div class="row" id="west"></div>
+    </div>
+    <script>
+      $.getJSON("./data/main1.json", (arraywest)=>{
+        let west = document.querySelector("#west");
+      for (let i = 0; i<arraywest.length; i++) {
+        west.innerHTML +=
+          ` <div class="col-md-4 col-sm-6 pd display">
+                      <div class="shadow-lg" style="width: 25rem;overflow:hidden">
+                <div class="zoom">
+         <a href=""><img src="`+ arraywest[i].image +
+          `" class="card-img-top w-100" style="height:20rem" alt="..."></a>
+      </div>
+      <div class="card-body container-fluid">
+        <h5>` +arraywest[i].name +
+          `</h5>
+      </div>
+    </div>
+    </div>`
+      }
+      })
+      </script>
+  </section>
+  <!-- western calligraphy end -->
 
     <script>
       // new arrival jquery start
@@ -199,14 +236,14 @@
       //  three panel jquery start
 
       const oldHtmlthree = $("#threepanel").html()
-      console.log(oldHtmlthree)
+      // console.log(oldHtmlthree)
       $(document).on("click", '#btthree', function(){
         // const arrivalbtn = $(this)
         $.ajax({
           type:"get",
           url:"./views/three-panel.html",
           success:function(response) {
-            console.log('res', response)
+            // console.log('res', response)
             $('#threepanel').html(response);
             $("section").hide();
             // console.log(arrivalbtn.parents("section"))
@@ -220,6 +257,83 @@
       })
 
       //  three panel jquery end 
+
+      // four panel jquery start
+      const oldHtmlfour = $("#fourpanel").html();
+      $(document).on("click", "#btfour", function(){
+        $.ajax({
+          type:"get",
+          url:"./views/four-panel.html",
+          success:function(response){
+            $("#fourpanel").html(response);
+            $("section").hide();
+            $("#fourpanel").show();
+          }
+        })
+      })
+      $(document).on("click", "#btn-go-back-four", function(){
+        $("#fourpanel").html(oldHtmlfour);
+        $("section").show();
+      })
+      // four panel jquery end
+
+      // five panel jquery start
+      const oldHtmlfive = $("#fivepanel").html();
+      // console.log(oldHtmlfive);
+      $(document).on("click", "#btfive", function(){
+        $.ajax({
+          type:"get",
+          url:"./views/five-panel.html",
+          success:function(response){
+            $("#fivepanel").html(response);
+            $("section").hide();
+            $("#fivepanel").show();
+          }
+        })
+      })
+      $(document).on("click", "#btn-go-back-five", function(){
+        $("#fivepanel").html(oldHtmlfive);
+        $("section").show();
+      })
+      // five panel jquery end
+
+      // wooden jquery start
+      const oldHtmlwooden = $("#wooden").html();
+      $(document).on("click", "#btwood", function(){
+        $.ajax({
+          type:"get",
+          url:"./views/wooden.html",
+          success:function(response){
+            $("#wooden").html(response);
+            $("section").hide();
+            $("#wooden").show();
+          }
+        })
+      })
+      $(document).on("click", "#btn-go-back-wood", function(){
+        $("#wooden").html(oldHtmlwooden);
+        $("section").show();
+      })
+      // wooden jquery end
+
+      // west jquery start
+      const oldHtmlwest = $("#western").html();
+      $(document).on("click", "#btwest", function(){
+        $.ajax({
+          type:"get",
+          url:"./views/west.html",
+          success:function(response){
+            $("#western").html(response);
+            $("section").hide();
+            $("#western").show();
+          }
+        })
+      })
+      $(document).on("click", "#btn-go-back-west", function(){
+        $("#western").html(oldHtmlwest);
+        $("section").show();
+      })
+      // west jquery end
       
     </script>
     
