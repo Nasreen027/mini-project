@@ -209,6 +209,37 @@
   </section>
   <!-- western calligraphy end -->
 
+  <!-- east asian calligraphy start -->
+  <section id="eastasian">
+    <div class="container mt-5">
+      <div class="top"><h2 class="right">East Asian Calligraphy Canvas</h2>
+        <div class="left"><button id="bteast" class="btn bt">See All</button>
+        </div></div>
+      <div class="row" id="east"></div>
+    </div>
+    <script>
+      $.getJSON("./data/main2.json", (arrayeast)=>{
+        let east = document.querySelector("#east");
+      for (let i = 0; i<arrayeast.length; i++) {
+        east.innerHTML +=
+          ` <div class="col-md-4 col-sm-6 pd display">
+                      <div class="shadow-lg" style="width: 25rem;overflow:hidden">
+                <div class="zoom">
+         <a href=""><img src="`+ arrayeast[i].image +
+          `" class="card-img-top w-100" style="height:20rem" alt="..."></a>
+      </div>
+      <div class="card-body container-fluid">
+        <h5>` +arrayeast[i].name +
+          `</h5>
+      </div>
+    </div>
+    </div>`
+      }
+      })
+      </script>
+  </section>
+  <!-- east asian calligraphy end -->
+
     <script>
       // new arrival jquery start
 
@@ -334,6 +365,25 @@
         $("section").show();
       })
       // west jquery end
+
+      // eastasian jquery start
+      const oldHtmleast = $("#eastasian").html();
+      $(document).on("click", "#bteast", function(){
+        $.ajax({
+          type:"get",
+          url:"./views/east.html",
+          success:function(response){
+            $("#eastasian").html(response),
+            $("section").hide();
+            $("#eastasian").show();
+          }
+        })
+      })
+      $(document).on("click", "#btn-go-back-east", function(){
+        $("#eastasian").html(oldHtmleast);
+        $("section").show();
+      })
+      // eastasian jquery end
       
     </script>
     
